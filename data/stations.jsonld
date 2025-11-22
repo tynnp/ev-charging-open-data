@@ -1,0 +1,946 @@
+{
+  "@context": [
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+    "https://smart-data-models.github.io/dataModel.Transportation/EVChargingStation/context.jsonld",
+    {
+      "sosa": "http://www.w3.org/ns/sosa/"
+    }
+  ],
+  "@type": "Dataset",
+  "name": "Dữ liệu Trạm sạc Xe điện Thành phố X (Khu vực TP.HCM)",
+  "description": "Danh sách vị trí, cấu hình các trạm sạc công cộng. Dữ liệu phục vụ cuộc thi OLP 2025.",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": {
+    "@type": "Organization",
+    "name": "UE Core - Đại học Sư phạm Thành phố Hồ Chí Minh"
+  },
+  "distribution": {
+    "@type": "DataDownload",
+    "encodingFormat": "application/ld+json",
+    "contentUrl": "https://tynnp.github.io/ev-charging-open-data/data/stations.jsonld"
+  },
+  "mainEntity": [
+    {
+      "id": "urn:ngsi-ld:EVChargingStation:001",
+      "type": "EVChargingStation",
+      "name": {
+        "type": "Property",
+        "value": "Trạm sạc ĐH Sư Phạm (Mô phỏng)"
+      },
+      "status": {
+        "type": "Property",
+        "value": "working"
+      },
+      "location": {
+        "type": "GeoProperty",
+        "value": {
+          "type": "Point",
+          "coordinates": [
+            106.682246,
+            10.761485
+          ]
+        }
+      },
+      "address": {
+        "type": "Property",
+        "value": {
+          "streetAddress": "280 An Dương Vương",
+          "addressLocality": "Thành phố Hồ Chí Minh",
+          "postalCode": "700000",
+          "addressCountry": "VN",
+          "sameAs": "http://www.wikidata.org/entity/Q1854"
+        }
+      },
+      "capacity": {
+        "type": "Property",
+        "value": 10
+      },
+      "socketNumber": {
+        "type": "Property",
+        "value": 12
+      },
+      "availableCapacity": {
+        "type": "Property",
+        "value": 7
+      },
+      "allowedVehicleType": {
+        "type": "Property",
+        "value": [
+          "car"
+        ]
+      },
+      "network": {
+        "type": "Property",
+        "value": "CityEV Network"
+      },
+      "operator": {
+        "type": "Property",
+        "value": "UE Core - Đại học Sư phạm TP.HCM"
+      },
+      "amperage": {
+        "type": "Property",
+        "value": 200,
+        "unitCode": "AMP"
+      },
+      "voltage": {
+        "type": "Property",
+        "value": 400,
+        "unitCode": "VLT"
+      },
+      "chargeType": {
+        "type": "Property",
+        "value": [
+          "flat"
+        ]
+      },
+      "acceptedPaymentMethod": {
+        "type": "Property",
+        "value": [
+          "Cash",
+          "PayPal"
+        ]
+      },
+      "openingHours": {
+        "type": "Property",
+        "value": "Mo-Su 06:00-22:00"
+      },
+      "socketType": {
+        "type": "Property",
+        "value": [
+          "Type2",
+          "CCS/SAE"
+        ]
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:EVChargingStation:002",
+      "type": "EVChargingStation",
+      "name": {
+        "type": "Property",
+        "value": "Trạm sạc NowZone (Mô phỏng)"
+      },
+      "status": {
+        "type": "Property",
+        "value": "working"
+      },
+      "location": {
+        "type": "GeoProperty",
+        "value": {
+          "type": "Point",
+          "coordinates": [
+            106.681123,
+            10.763712
+          ]
+        }
+      },
+      "address": {
+        "type": "Property",
+        "value": {
+          "streetAddress": "235 Nguyễn Văn Cừ",
+          "addressLocality": "Thành phố Hồ Chí Minh",
+          "sameAs": "http://www.wikidata.org/entity/Q1854"
+        }
+      },
+      "capacity": {
+        "type": "Property",
+        "value": 4
+      },
+      "socketNumber": {
+        "type": "Property",
+        "value": 6
+      },
+      "availableCapacity": {
+        "type": "Property",
+        "value": 3
+      },
+      "allowedVehicleType": {
+        "type": "Property",
+        "value": [
+          "car"
+        ]
+      },
+      "network": {
+        "type": "Property",
+        "value": "NowCharge Network"
+      },
+      "operator": {
+        "type": "Property",
+        "value": "NowZone Mall"
+      },
+      "amperage": {
+        "type": "Property",
+        "value": 150,
+        "unitCode": "AMP"
+      },
+      "voltage": {
+        "type": "Property",
+        "value": 400,
+        "unitCode": "VLT"
+      },
+      "chargeType": {
+        "type": "Property",
+        "value": [
+          "flat",
+          "monthlyPayment"
+        ]
+      },
+      "acceptedPaymentMethod": {
+        "type": "Property",
+        "value": [
+          "Cash",
+          "DirectDebit",
+          "PayPal"
+        ]
+      },
+      "openingHours": {
+        "type": "Property",
+        "value": "Mo-Su 09:00-22:00"
+      },
+      "socketType": {
+        "type": "Property",
+        "value": [
+          "CHAdeMO",
+          "CCS/SAE"
+        ]
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:EVChargingStation:003",
+      "type": "EVChargingStation",
+      "name": {
+        "type": "Property",
+        "value": "Trạm sạc Công viên 23/9 (Mô phỏng)"
+      },
+      "status": {
+        "type": "Property",
+        "value": "working"
+      },
+      "location": {
+        "type": "GeoProperty",
+        "value": {
+          "type": "Point",
+          "coordinates": [
+            106.691456,
+            10.769245
+          ]
+        }
+      },
+      "address": {
+        "type": "Property",
+        "value": {
+          "streetAddress": "Phạm Ngũ Lão",
+          "addressLocality": "Thành phố Hồ Chí Minh",
+          "sameAs": "http://www.wikidata.org/entity/Q1854"
+        }
+      },
+      "capacity": {
+        "type": "Property",
+        "value": 20
+      },
+      "socketNumber": {
+        "type": "Property",
+        "value": 24
+      },
+      "availableCapacity": {
+        "type": "Property",
+        "value": 15
+      },
+      "allowedVehicleType": {
+        "type": "Property",
+        "value": [
+          "car"
+        ]
+      },
+      "network": {
+        "type": "Property",
+        "value": "CityPark EV"
+      },
+      "operator": {
+        "type": "Property",
+        "value": "Công viên 23/9"
+      },
+      "amperage": {
+        "type": "Property",
+        "value": 300,
+        "unitCode": "AMP"
+      },
+      "voltage": {
+        "type": "Property",
+        "value": 400,
+        "unitCode": "VLT"
+      },
+      "chargeType": {
+        "type": "Property",
+        "value": [
+          "free"
+        ]
+      },
+      "acceptedPaymentMethod": {
+        "type": "Property",
+        "value": [
+          "Cash"
+        ]
+      },
+      "openingHours": {
+        "type": "Property",
+        "value": "Mo-Su 00:00-23:59"
+      },
+      "socketType": {
+        "type": "Property",
+        "value": [
+          "Type2"
+        ]
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:EVChargingStation:004",
+      "type": "EVChargingStation",
+      "name": {
+        "type": "Property",
+        "value": "Trạm sạc Landmark 81 (Mô phỏng)"
+      },
+      "status": {
+        "type": "Property",
+        "value": "almostFull"
+      },
+      "location": {
+        "type": "GeoProperty",
+        "value": {
+          "type": "Point",
+          "coordinates": [
+            106.7223,
+            10.7942
+          ]
+        }
+      },
+      "address": {
+        "type": "Property",
+        "value": {
+          "streetAddress": "208 Nguyễn Hữu Cảnh",
+          "addressLocality": "Quận Bình Thạnh",
+          "addressCountry": "VN"
+        }
+      },
+      "capacity": {
+        "type": "Property",
+        "value": 16
+      },
+      "socketNumber": {
+        "type": "Property",
+        "value": 20
+      },
+      "availableCapacity": {
+        "type": "Property",
+        "value": 9
+      },
+      "allowedVehicleType": {
+        "type": "Property",
+        "value": [
+          "car",
+          "motorcycle"
+        ]
+      },
+      "network": {
+        "type": "Property",
+        "value": "VinCity Charge"
+      },
+      "operator": {
+        "type": "Property",
+        "value": "Khu phức hợp Landmark 81"
+      },
+      "amperage": {
+        "type": "Property",
+        "value": 250,
+        "unitCode": "AMP"
+      },
+      "voltage": {
+        "type": "Property",
+        "value": 400,
+        "unitCode": "VLT"
+      },
+      "chargeType": {
+        "type": "Property",
+        "value": [
+          "flat",
+          "monthlyPayment"
+        ]
+      },
+      "acceptedPaymentMethod": {
+        "type": "Property",
+        "value": [
+          "Cash",
+          "DirectDebit",
+          "PayPal"
+        ]
+      },
+      "openingHours": {
+        "type": "Property",
+        "value": "Mo-Su 00:00-23:59"
+      },
+      "socketType": {
+        "type": "Property",
+        "value": [
+          "Type2",
+          "CCS/SAE",
+          "Tesla"
+        ]
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:EVChargingStation:005",
+      "type": "EVChargingStation",
+      "name": {
+        "type": "Property",
+        "value": "Trạm sạc Crescent Mall (Mô phỏng)"
+      },
+      "status": {
+        "type": "Property",
+        "value": "almostEmpty"
+      },
+      "location": {
+        "type": "GeoProperty",
+        "value": {
+          "type": "Point",
+          "coordinates": [
+            106.721,
+            10.7306
+          ]
+        }
+      },
+      "address": {
+        "type": "Property",
+        "value": {
+          "streetAddress": "101 Tôn Dật Tiên",
+          "addressLocality": "Quận 7",
+          "addressCountry": "VN"
+        }
+      },
+      "capacity": {
+        "type": "Property",
+        "value": 12
+      },
+      "socketNumber": {
+        "type": "Property",
+        "value": 16
+      },
+      "availableCapacity": {
+        "type": "Property",
+        "value": 5
+      },
+      "allowedVehicleType": {
+        "type": "Property",
+        "value": [
+          "car"
+        ]
+      },
+      "network": {
+        "type": "Property",
+        "value": "SaigonSouth EV"
+      },
+      "operator": {
+        "type": "Property",
+        "value": "Crescent Mall"
+      },
+      "amperage": {
+        "type": "Property",
+        "value": 220,
+        "unitCode": "AMP"
+      },
+      "voltage": {
+        "type": "Property",
+        "value": 400,
+        "unitCode": "VLT"
+      },
+      "chargeType": {
+        "type": "Property",
+        "value": [
+          "flat"
+        ]
+      },
+      "acceptedPaymentMethod": {
+        "type": "Property",
+        "value": [
+          "Cash",
+          "PayPal",
+          "ByInvoice"
+        ]
+      },
+      "openingHours": {
+        "type": "Property",
+        "value": "Mo-Su 08:00-22:00"
+      },
+      "socketType": {
+        "type": "Property",
+        "value": [
+          "Type2",
+          "CHAdeMO"
+        ]
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:EVChargingStation:006",
+      "type": "EVChargingStation",
+      "name": {
+        "type": "Property",
+        "value": "Trạm sạc Vincom Thủ Đức (Mô phỏng)"
+      },
+      "status": {
+        "type": "Property",
+        "value": "working"
+      },
+      "location": {
+        "type": "GeoProperty",
+        "value": {
+          "type": "Point",
+          "coordinates": [
+            106.7595,
+            10.851
+          ]
+        }
+      },
+      "address": {
+        "type": "Property",
+        "value": {
+          "streetAddress": "216 Võ Văn Ngân",
+          "addressLocality": "Thành phố Thủ Đức",
+          "addressCountry": "VN"
+        }
+      },
+      "capacity": {
+        "type": "Property",
+        "value": 8
+      },
+      "socketNumber": {
+        "type": "Property",
+        "value": 10
+      },
+      "availableCapacity": {
+        "type": "Property",
+        "value": 2
+      },
+      "allowedVehicleType": {
+        "type": "Property",
+        "value": [
+          "car"
+        ]
+      },
+      "network": {
+        "type": "Property",
+        "value": "ThuDuc EV Network"
+      },
+      "operator": {
+        "type": "Property",
+        "value": "Vincom Plaza Thủ Đức"
+      },
+      "amperage": {
+        "type": "Property",
+        "value": 160,
+        "unitCode": "AMP"
+      },
+      "voltage": {
+        "type": "Property",
+        "value": 400,
+        "unitCode": "VLT"
+      },
+      "chargeType": {
+        "type": "Property",
+        "value": [
+          "flat",
+          "other"
+        ]
+      },
+      "acceptedPaymentMethod": {
+        "type": "Property",
+        "value": [
+          "Cash",
+          "PayPal",
+          "GoogleCheckout"
+        ]
+      },
+      "openingHours": {
+        "type": "Property",
+        "value": "Mo-Su 09:00-22:00"
+      },
+      "socketType": {
+        "type": "Property",
+        "value": [
+          "Type2",
+          "CCS/SAE"
+        ]
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:EVChargingStation:007",
+      "type": "EVChargingStation",
+      "name": {
+        "type": "Property",
+        "value": "Trạm sạc Sân bay Tân Sơn Nhất (Mô phỏng)"
+      },
+      "status": {
+        "type": "Property",
+        "value": "withIncidence"
+      },
+      "location": {
+        "type": "GeoProperty",
+        "value": {
+          "type": "Point",
+          "coordinates": [
+            106.6636,
+            10.8142
+          ]
+        }
+      },
+      "address": {
+        "type": "Property",
+        "value": {
+          "streetAddress": "Trường Sơn",
+          "addressLocality": "Quận Tân Bình",
+          "addressCountry": "VN"
+        }
+      },
+      "capacity": {
+        "type": "Property",
+        "value": 30
+      },
+      "socketNumber": {
+        "type": "Property",
+        "value": 40
+      },
+      "availableCapacity": {
+        "type": "Property",
+        "value": 10
+      },
+      "allowedVehicleType": {
+        "type": "Property",
+        "value": [
+          "car",
+          "bus"
+        ]
+      },
+      "network": {
+        "type": "Property",
+        "value": "Airport EV"
+      },
+      "operator": {
+        "type": "Property",
+        "value": "Cảng Hàng không Quốc tế Tân Sơn Nhất"
+      },
+      "amperage": {
+        "type": "Property",
+        "value": 500,
+        "unitCode": "AMP"
+      },
+      "voltage": {
+        "type": "Property",
+        "value": 400,
+        "unitCode": "VLT"
+      },
+      "chargeType": {
+        "type": "Property",
+        "value": [
+          "flat",
+          "annualPayment"
+        ]
+      },
+      "acceptedPaymentMethod": {
+        "type": "Property",
+        "value": [
+          "Cash",
+          "ByBankTransferInAdvance",
+          "DirectDebit",
+          "PayPal"
+        ]
+      },
+      "openingHours": {
+        "type": "Property",
+        "value": "Mo-Su 00:00-23:59"
+      },
+      "socketType": {
+        "type": "Property",
+        "value": [
+          "Type2",
+          "CCS/SAE",
+          "CHAdeMO"
+        ]
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:EVChargingStation:008",
+      "type": "EVChargingStation",
+      "name": {
+        "type": "Property",
+        "value": "Trạm sạc Bến xe Miền Đông mới (Mô phỏng)"
+      },
+      "status": {
+        "type": "Property",
+        "value": "almostEmpty"
+      },
+      "location": {
+        "type": "GeoProperty",
+        "value": {
+          "type": "Point",
+          "coordinates": [
+            106.7533,
+            10.8787
+          ]
+        }
+      },
+      "address": {
+        "type": "Property",
+        "value": {
+          "streetAddress": "Xa lộ Hà Nội",
+          "addressLocality": "Thành phố Thủ Đức",
+          "addressCountry": "VN"
+        }
+      },
+      "capacity": {
+        "type": "Property",
+        "value": 20
+      },
+      "socketNumber": {
+        "type": "Property",
+        "value": 30
+      },
+      "availableCapacity": {
+        "type": "Property",
+        "value": 12
+      },
+      "allowedVehicleType": {
+        "type": "Property",
+        "value": [
+          "bus",
+          "car",
+          "truck"
+        ]
+      },
+      "network": {
+        "type": "Property",
+        "value": "Intercity EV Network"
+      },
+      "operator": {
+        "type": "Property",
+        "value": "Bến xe Miền Đông mới"
+      },
+      "amperage": {
+        "type": "Property",
+        "value": 400,
+        "unitCode": "AMP"
+      },
+      "voltage": {
+        "type": "Property",
+        "value": 400,
+        "unitCode": "VLT"
+      },
+      "chargeType": {
+        "type": "Property",
+        "value": [
+          "flat",
+          "other"
+        ]
+      },
+      "acceptedPaymentMethod": {
+        "type": "Property",
+        "value": [
+          "Cash",
+          "ByInvoice",
+          "DirectDebit"
+        ]
+      },
+      "openingHours": {
+        "type": "Property",
+        "value": "Mo-Su 04:00-23:00"
+      },
+      "socketType": {
+        "type": "Property",
+        "value": [
+          "Type2",
+          "CCS/SAE",
+          "Caravan_Mains_Socket"
+        ]
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:EVChargingStation:009",
+      "type": "EVChargingStation",
+      "name": {
+        "type": "Property",
+        "value": "Trạm sạc Công viên Gia Định (Mô phỏng)"
+      },
+      "status": {
+        "type": "Property",
+        "value": "working"
+      },
+      "location": {
+        "type": "GeoProperty",
+        "value": {
+          "type": "Point",
+          "coordinates": [
+            106.679,
+            10.8125
+          ]
+        }
+      },
+      "address": {
+        "type": "Property",
+        "value": {
+          "streetAddress": "Hoàng Minh Giám",
+          "addressLocality": "Quận Gò Vấp",
+          "addressCountry": "VN"
+        }
+      },
+      "capacity": {
+        "type": "Property",
+        "value": 6
+      },
+      "socketNumber": {
+        "type": "Property",
+        "value": 8
+      },
+      "availableCapacity": {
+        "type": "Property",
+        "value": 4
+      },
+      "allowedVehicleType": {
+        "type": "Property",
+        "value": [
+          "car",
+          "motorcycle"
+        ]
+      },
+      "network": {
+        "type": "Property",
+        "value": "CityPark EV"
+      },
+      "operator": {
+        "type": "Property",
+        "value": "Công ty Công viên Cây xanh"
+      },
+      "amperage": {
+        "type": "Property",
+        "value": 120,
+        "unitCode": "AMP"
+      },
+      "voltage": {
+        "type": "Property",
+        "value": 230,
+        "unitCode": "VLT"
+      },
+      "chargeType": {
+        "type": "Property",
+        "value": [
+          "free"
+        ]
+      },
+      "acceptedPaymentMethod": {
+        "type": "Property",
+        "value": [
+          "Cash"
+        ]
+      },
+      "openingHours": {
+        "type": "Property",
+        "value": "Mo-Su 05:00-21:00"
+      },
+      "socketType": {
+        "type": "Property",
+        "value": [
+          "Type2",
+          "Wall_Euro"
+        ]
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:EVChargingStation:010",
+      "type": "EVChargingStation",
+      "name": {
+        "type": "Property",
+        "value": "Trạm sạc Chợ Bến Thành (Mô phỏng)"
+      },
+      "status": {
+        "type": "Property",
+        "value": "almostFull"
+      },
+      "location": {
+        "type": "GeoProperty",
+        "value": {
+          "type": "Point",
+          "coordinates": [
+            106.6983,
+            10.772
+          ]
+        }
+      },
+      "address": {
+        "type": "Property",
+        "value": {
+          "streetAddress": "Lê Lợi",
+          "addressLocality": "Quận 1",
+          "addressCountry": "VN"
+        }
+      },
+      "capacity": {
+        "type": "Property",
+        "value": 10
+      },
+      "socketNumber": {
+        "type": "Property",
+        "value": 14
+      },
+      "availableCapacity": {
+        "type": "Property",
+        "value": 3
+      },
+      "allowedVehicleType": {
+        "type": "Property",
+        "value": [
+          "car",
+          "motorscooter"
+        ]
+      },
+      "network": {
+        "type": "Property",
+        "value": "Downtown EV"
+      },
+      "operator": {
+        "type": "Property",
+        "value": "Chợ Bến Thành"
+      },
+      "amperage": {
+        "type": "Property",
+        "value": 180,
+        "unitCode": "AMP"
+      },
+      "voltage": {
+        "type": "Property",
+        "value": 400,
+        "unitCode": "VLT"
+      },
+      "chargeType": {
+        "type": "Property",
+        "value": [
+          "flat",
+          "other"
+        ]
+      },
+      "acceptedPaymentMethod": {
+        "type": "Property",
+        "value": [
+          "Cash",
+          "PayPal"
+        ]
+      },
+      "openingHours": {
+        "type": "Property",
+        "value": "Mo-Su 06:00-23:00"
+      },
+      "socketType": {
+        "type": "Property",
+        "value": [
+          "Type2",
+          "Type3",
+          "Wall_Euro"
+        ]
+      }
+    }
+  ]
+}

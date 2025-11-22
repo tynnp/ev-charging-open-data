@@ -1,0 +1,457 @@
+{
+  "@context": [
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+    "https://smart-data-models.github.io/dataModel.Transportation/EVChargingStation/context.jsonld",
+    {
+      "sosa": "http://www.w3.org/ns/sosa/",
+      "EVChargingSession": "http://www.w3.org/ns/sosa/Observation",
+      "Sensor": "http://www.w3.org/ns/sosa/Sensor",
+      "refFeatureOfInterest": {
+        "@id": "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
+        "@type": "@id"
+      },
+      "refSensor": {
+        "@id": "http://www.w3.org/ns/sosa/madeBySensor",
+        "@type": "@id"
+      },
+      "observedProperty": {
+        "@id": "http://www.w3.org/ns/sosa/observedProperty",
+        "@type": "@id"
+      },
+      "phenomenonTime": "http://www.w3.org/ns/sosa/phenomenonTime",
+      "resultTime": "http://www.w3.org/ns/sosa/resultTime"
+    }
+  ],
+  "@type": "Dataset",
+  "name": "Các phiên sạc xe điện mô phỏng tại Thành phố X",
+  "description": "Tập dữ liệu các lần sạc (charging sessions) gắn với một số trạm trong stations.jsonld, tuân thủ NGSI-LD và sử dụng khái niệm SOSA Observation.",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "mainEntity": [
+    {
+      "id": "urn:ngsi-ld:EVChargingSession:001-1",
+      "type": "EVChargingSession",
+      "refFeatureOfInterest": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:EVChargingStation:001"
+      },
+      "refSensor": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Sensor:001-Main"
+      },
+      "observedProperty": {
+        "type": "Relationship",
+        "object": "https://example.org/def/EVChargingSession"
+      },
+      "startDateTime": {
+        "type": "Property",
+        "value": "2025-11-20T01:15:00Z"
+      },
+      "endDateTime": {
+        "type": "Property",
+        "value": "2025-11-20T02:05:00Z"
+      },
+      "phenomenonTime": {
+        "type": "Property",
+        "value": "2025-11-20T01:15:00Z"
+      },
+      "resultTime": {
+        "type": "Property",
+        "value": "2025-11-20T02:05:00Z"
+      },
+      "vehicleType": {
+        "type": "Property",
+        "value": "car"
+      },
+      "chargingUnitId": {
+        "type": "Property",
+        "value": "001-A"
+      },
+      "transactionId": {
+        "type": "Property",
+        "value": "TX-20251120-0001"
+      },
+      "transactionType": {
+        "type": "Property",
+        "value": "card"
+      },
+      "powerConsumption": {
+        "type": "Property",
+        "value": 28.5,
+        "unitCode": "KWH"
+      },
+      "amountCollected": {
+        "type": "Property",
+        "value": 170000,
+        "unitCode": "VND"
+      },
+      "taxAmountCollected": {
+        "type": "Property",
+        "value": 17000,
+        "unitCode": "VND"
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:EVChargingSession:001-2",
+      "type": "EVChargingSession",
+      "refFeatureOfInterest": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:EVChargingStation:001"
+      },
+      "refSensor": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Sensor:001-Main"
+      },
+      "observedProperty": {
+        "type": "Relationship",
+        "object": "https://example.org/def/EVChargingSession"
+      },
+      "startDateTime": {
+        "type": "Property",
+        "value": "2025-11-20T11:30:00Z"
+      },
+      "endDateTime": {
+        "type": "Property",
+        "value": "2025-11-20T12:10:00Z"
+      },
+      "phenomenonTime": {
+        "type": "Property",
+        "value": "2025-11-20T11:30:00Z"
+      },
+      "resultTime": {
+        "type": "Property",
+        "value": "2025-11-20T12:10:00Z"
+      },
+      "vehicleType": {
+        "type": "Property",
+        "value": "car"
+      },
+      "chargingUnitId": {
+        "type": "Property",
+        "value": "001-B"
+      },
+      "transactionId": {
+        "type": "Property",
+        "value": "TX-20251120-0002"
+      },
+      "transactionType": {
+        "type": "Property",
+        "value": "mobile"
+      },
+      "powerConsumption": {
+        "type": "Property",
+        "value": 15.2,
+        "unitCode": "KWH"
+      },
+      "amountCollected": {
+        "type": "Property",
+        "value": 95000,
+        "unitCode": "VND"
+      },
+      "taxAmountCollected": {
+        "type": "Property",
+        "value": 9500,
+        "unitCode": "VND"
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:EVChargingSession:003-1",
+      "type": "EVChargingSession",
+      "refFeatureOfInterest": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:EVChargingStation:003"
+      },
+      "refSensor": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Sensor:003-Main"
+      },
+      "observedProperty": {
+        "type": "Relationship",
+        "object": "https://example.org/def/EVChargingSession"
+      },
+      "startDateTime": {
+        "type": "Property",
+        "value": "2025-11-19T14:00:00Z"
+      },
+      "endDateTime": {
+        "type": "Property",
+        "value": "2025-11-19T16:30:00Z"
+      },
+      "phenomenonTime": {
+        "type": "Property",
+        "value": "2025-11-19T14:00:00Z"
+      },
+      "resultTime": {
+        "type": "Property",
+        "value": "2025-11-19T16:30:00Z"
+      },
+      "vehicleType": {
+        "type": "Property",
+        "value": "car"
+      },
+      "chargingUnitId": {
+        "type": "Property",
+        "value": "003-C"
+      },
+      "transactionId": {
+        "type": "Property",
+        "value": "TX-20251119-0101"
+      },
+      "transactionType": {
+        "type": "Property",
+        "value": "card"
+      },
+      "powerConsumption": {
+        "type": "Property",
+        "value": 45.7,
+        "unitCode": "KWH"
+      },
+      "amountCollected": {
+        "type": "Property",
+        "value": 260000,
+        "unitCode": "VND"
+      },
+      "taxAmountCollected": {
+        "type": "Property",
+        "value": 26000,
+        "unitCode": "VND"
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:EVChargingSession:003-2",
+      "type": "EVChargingSession",
+      "refFeatureOfInterest": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:EVChargingStation:003"
+      },
+      "refSensor": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Sensor:003-Main"
+      },
+      "observedProperty": {
+        "type": "Relationship",
+        "object": "https://example.org/def/EVChargingSession"
+      },
+      "startDateTime": {
+        "type": "Property",
+        "value": "2025-11-21T00:10:00Z"
+      },
+      "endDateTime": {
+        "type": "Property",
+        "value": "2025-11-21T00:45:00Z"
+      },
+      "phenomenonTime": {
+        "type": "Property",
+        "value": "2025-11-21T00:10:00Z"
+      },
+      "resultTime": {
+        "type": "Property",
+        "value": "2025-11-21T00:45:00Z"
+      },
+      "vehicleType": {
+        "type": "Property",
+        "value": "car"
+      },
+      "chargingUnitId": {
+        "type": "Property",
+        "value": "003-D"
+      },
+      "transactionId": {
+        "type": "Property",
+        "value": "TX-20251121-0003"
+      },
+      "transactionType": {
+        "type": "Property",
+        "value": "mobile"
+      },
+      "powerConsumption": {
+        "type": "Property",
+        "value": 12.8,
+        "unitCode": "KWH"
+      },
+      "amountCollected": {
+        "type": "Property",
+        "value": 80000,
+        "unitCode": "VND"
+      },
+      "taxAmountCollected": {
+        "type": "Property",
+        "value": 8000,
+        "unitCode": "VND"
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:EVChargingSession:007-1",
+      "type": "EVChargingSession",
+      "refFeatureOfInterest": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:EVChargingStation:007"
+      },
+      "refSensor": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Sensor:007-Main"
+      },
+      "observedProperty": {
+        "type": "Relationship",
+        "object": "https://example.org/def/EVChargingSession"
+      },
+      "startDateTime": {
+        "type": "Property",
+        "value": "2025-11-18T03:00:00Z"
+      },
+      "endDateTime": {
+        "type": "Property",
+        "value": "2025-11-18T05:30:00Z"
+      },
+      "phenomenonTime": {
+        "type": "Property",
+        "value": "2025-11-18T03:00:00Z"
+      },
+      "resultTime": {
+        "type": "Property",
+        "value": "2025-11-18T05:30:00Z"
+      },
+      "vehicleType": {
+        "type": "Property",
+        "value": "bus"
+      },
+      "chargingUnitId": {
+        "type": "Property",
+        "value": "007-BUS-01"
+      },
+      "transactionId": {
+        "type": "Property",
+        "value": "TX-20251118-0701"
+      },
+      "transactionType": {
+        "type": "Property",
+        "value": "invoice"
+      },
+      "powerConsumption": {
+        "type": "Property",
+        "value": 120.4,
+        "unitCode": "KWH"
+      },
+      "amountCollected": {
+        "type": "Property",
+        "value": 850000,
+        "unitCode": "VND"
+      },
+      "taxAmountCollected": {
+        "type": "Property",
+        "value": 85000,
+        "unitCode": "VND"
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:EVChargingSession:008-1",
+      "type": "EVChargingSession",
+      "refFeatureOfInterest": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:EVChargingStation:008"
+      },
+      "refSensor": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Sensor:008-Main"
+      },
+      "observedProperty": {
+        "type": "Relationship",
+        "object": "https://example.org/def/EVChargingSession"
+      },
+      "startDateTime": {
+        "type": "Property",
+        "value": "2025-11-18T15:15:00Z"
+      },
+      "endDateTime": {
+        "type": "Property",
+        "value": "2025-11-18T17:05:00Z"
+      },
+      "phenomenonTime": {
+        "type": "Property",
+        "value": "2025-11-18T15:15:00Z"
+      },
+      "resultTime": {
+        "type": "Property",
+        "value": "2025-11-18T17:05:00Z"
+      },
+      "vehicleType": {
+        "type": "Property",
+        "value": "truck"
+      },
+      "chargingUnitId": {
+        "type": "Property",
+        "value": "008-TRUCK-02"
+      },
+      "transactionId": {
+        "type": "Property",
+        "value": "TX-20251118-0802"
+      },
+      "transactionType": {
+        "type": "Property",
+        "value": "invoice"
+      },
+      "powerConsumption": {
+        "type": "Property",
+        "value": 95.3,
+        "unitCode": "KWH"
+      },
+      "amountCollected": {
+        "type": "Property",
+        "value": 720000,
+        "unitCode": "VND"
+      },
+      "taxAmountCollected": {
+        "type": "Property",
+        "value": 72000,
+        "unitCode": "VND"
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Sensor:001-Main",
+      "type": "Sensor",
+      "name": {
+        "type": "Property",
+        "value": "Cảm biến đo năng lượng trạm sạc 001"
+      },
+      "description": {
+        "type": "Property",
+        "value": "Sensor (SOSA/SSN) đo năng lượng và thời lượng các phiên sạc tại trạm urn:ngsi-ld:EVChargingStation:001."
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Sensor:003-Main",
+      "type": "Sensor",
+      "name": {
+        "type": "Property",
+        "value": "Cảm biến đo năng lượng trạm sạc 003"
+      },
+      "description": {
+        "type": "Property",
+        "value": "Sensor (SOSA/SSN) đo năng lượng và thời lượng các phiên sạc tại trạm urn:ngsi-ld:EVChargingStation:003."
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Sensor:007-Main",
+      "type": "Sensor",
+      "name": {
+        "type": "Property",
+        "value": "Cảm biến đo năng lượng trạm sạc 007"
+      },
+      "description": {
+        "type": "Property",
+        "value": "Sensor (SOSA/SSN) đo năng lượng và thời lượng các phiên sạc tại trạm urn:ngsi-ld:EVChargingStation:007."
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Sensor:008-Main",
+      "type": "Sensor",
+      "name": {
+        "type": "Property",
+        "value": "Cảm biến đo năng lượng trạm sạc 008"
+      },
+      "description": {
+        "type": "Property",
+        "value": "Sensor (SOSA/SSN) đo năng lượng và thời lượng các phiên sạc tại trạm urn:ngsi-ld:EVChargingStation:008."
+      }
+    }
+  ]
+}
