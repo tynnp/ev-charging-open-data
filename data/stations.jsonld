@@ -66,7 +66,7 @@
       "allowedVehicleType": {
         "type": "Property",
         "value": [
-          "car"
+          "electricCar"
         ]
       },
       "network": {
@@ -156,7 +156,7 @@
       "allowedVehicleType": {
         "type": "Property",
         "value": [
-          "car"
+          "electricCar"
         ]
       },
       "network": {
@@ -248,7 +248,7 @@
       "allowedVehicleType": {
         "type": "Property",
         "value": [
-          "car"
+          "electricCar"
         ]
       },
       "network": {
@@ -336,8 +336,8 @@
       "allowedVehicleType": {
         "type": "Property",
         "value": [
-          "car",
-          "motorcycle"
+          "electricCar",
+          "electricMotorcycle"
         ]
       },
       "network": {
@@ -430,7 +430,7 @@
       "allowedVehicleType": {
         "type": "Property",
         "value": [
-          "car"
+          "electricCar"
         ]
       },
       "network": {
@@ -521,7 +521,7 @@
       "allowedVehicleType": {
         "type": "Property",
         "value": [
-          "car"
+          "electricCar"
         ]
       },
       "network": {
@@ -613,8 +613,8 @@
       "allowedVehicleType": {
         "type": "Property",
         "value": [
-          "car",
-          "bus"
+          "electricCar",
+          "electricBus"
         ]
       },
       "network": {
@@ -708,9 +708,8 @@
       "allowedVehicleType": {
         "type": "Property",
         "value": [
-          "bus",
-          "car",
-          "truck"
+          "electricBus",
+          "electricCar"
         ]
       },
       "network": {
@@ -803,8 +802,8 @@
       "allowedVehicleType": {
         "type": "Property",
         "value": [
-          "car",
-          "motorcycle"
+          "electricCar",
+          "electricMotorcycle"
         ]
       },
       "network": {
@@ -893,8 +892,8 @@
       "allowedVehicleType": {
         "type": "Property",
         "value": [
-          "car",
-          "motorscooter"
+          "electricCar",
+          "electricMotorcycle"
         ]
       },
       "network": {
