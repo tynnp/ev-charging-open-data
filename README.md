@@ -64,3 +64,23 @@ Dữ liệu sử dụng vocabulary schema.org (https://schema.org), được c�
 Giấy phép cho phần mềm (API, dịch vụ backend, frontend web hoặc mobile) nên là một giấy phép nguồn mở được OSI phê duyệt như MIT, Apache-2.0 hoặc GPL, và sẽ được mô tả riêng trong kho mã nguồn của ứng dụng.
 
 Mục tiêu của bộ dữ liệu là cung cấp một tập ví dụ hoàn chỉnh, có thể nạp trực tiếp vào NGSI-LD broker, dễ dàng tích hợp với các thành phần FIWARE và có thể dùng lại trong nhiều bối cảnh nghiên cứu hoặc trình diễn liên quan đến thành phố thông minh, hạ tầng sạc xe điện và quản lý dữ liệu IoT theo các tiêu chuẩn mở hiện đại.
+
+## 8. Hướng dẫn nạp dữ liệu vào NGSI-LD broker
+
+Các tệp `data/stations.jsonld` và `data/observations.jsonld` được tổ chức dưới dạng một đối tượng Dataset JSON-LD có trường `mainEntity` chứa mảng các entity NGSI-LD. Để nạp dữ liệu này vào NGSI-LD broker (Orion-LD, Scorpio,…), thực hiện theo các bước sau:
+
+1. Parse file JSON-LD và trích xuất:
+   - Giá trị `@context` ở cấp Dataset.
+   - Mảng entity trong trường `mainEntity`.
+
+2. Khi gọi API tới broker:
+   - Gửi từng entity riêng lẻ qua endpoint `POST /ngsi-ld/v1/entities`; hoặc
+   - Gửi nhiều entity một lần qua endpoint `POST /ngsi-ld/v1/entityOperations/upsert` với body là mảng các entity.
+
+3. Cung cấp context NGSI-LD cho broker:
+   - Hoặc giữ `@context` ngay trong body JSON-LD;
+   - Hoặc truyền qua HTTP header `Link`, ví dụ:
+
+     `<https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld>; rel="http://www.w3.org/ns/json-ld#context"; type="application/ld+json"`
+
+Tóm tắt: khi nạp dữ liệu, luôn lấy mảng `mainEntity` trong các tệp Dataset rồi gửi các entity đó lên NGSI-LD broker qua `POST /ngsi-ld/v1/entities` hoặc `POST /ngsi-ld/v1/entityOperations/upsert`, kèm theo context NGSI-LD bằng `@context` trong body hoặc qua header `Link`.
