@@ -556,6 +556,3327 @@
           "unitCode": "VND"
         }
       }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Station002-MorningRush",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:002",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 1,
+          "observedAt": "2025-11-21T07:30:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostFull",
+          "observedAt": "2025-11-21T07:30:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 55.2,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 4
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Station005-LunchTime",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:005",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 2,
+          "observedAt": "2025-11-21T12:15:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostFull",
+          "observedAt": "2025-11-21T12:15:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 48.7,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 3
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Station006-EveningRush",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:006",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 0,
+          "observedAt": "2025-11-21T18:00:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "withIncidence",
+          "observedAt": "2025-11-21T18:00:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 70.1,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 6
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Station009-MorningWalkers",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:009",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 5,
+          "observedAt": "2025-11-21T06:30:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "working",
+          "observedAt": "2025-11-21T06:30:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 10.5,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 1
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Station010-NightMarketPeak",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:010",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 1,
+          "observedAt": "2025-11-21T20:30:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostFull",
+          "observedAt": "2025-11-21T20:30:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 65.0,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 5
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Station003-Recovered",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:003",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 10,
+          "observedAt": "2025-11-21T13:00:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "working",
+          "observedAt": "2025-11-21T13:00:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 120.3,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 1
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-001-4",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:001-4",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:001"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:001-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-22T08:00:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-22T08:35:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-22T08:00:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-22T08:35:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricCar"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "001-D"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251122-0005"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "mobile"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 16.3,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 102000,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 10200,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-003-3",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:003-3",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:003"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:003-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-22T10:20:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-22T11:00:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-22T10:20:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-22T11:00:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricCar"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "003-E"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251122-0102"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "card"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 14.7,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 91000,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 9100,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-007-3",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:007-3",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:007"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:007-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-22T02:40:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-22T03:30:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-22T02:40:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-22T03:30:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricBus"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "007-BUS-03"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251122-0703"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "invoice"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 92.1,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 680000,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 68000,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-008-3",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:008-3",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:008"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:008-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-22T21:10:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-22T21:55:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-22T21:10:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-22T21:55:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricBus"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "008-TRUCK-04"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251122-0804"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "invoice"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 81.6,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 610000,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 61000,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-009-2",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:009-2",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:009"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:009-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-22T06:50:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-22T07:20:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-22T06:50:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-22T07:20:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricMotorcycle"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "009-M2"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251122-0902"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "card"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 4.5,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 29000,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 2900,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-010-2",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:010-2",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:010"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:010-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-22T18:10:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-22T18:40:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-22T18:10:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-22T18:40:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricMotorcycle"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "010-M2"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251122-1002"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "mobile"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 5.1,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 33000,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 3300,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:001-AutoStationUpdate-1",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:001",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 8,
+          "observedAt": "2025-11-23T06:10:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "withIncidence",
+          "observedAt": "2025-11-23T06:10:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 82.6,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 1
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:001-AutoStationUpdate-2",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:001",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 8,
+          "observedAt": "2025-11-23T06:25:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "working",
+          "observedAt": "2025-11-23T06:25:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 35.1,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:001-AutoStationUpdate-3",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:001",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 4,
+          "observedAt": "2025-11-23T06:40:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostFull",
+          "observedAt": "2025-11-23T06:40:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 16.9,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 5
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:001-AutoStationUpdate-4",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:001",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 10,
+          "observedAt": "2025-11-23T06:55:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "withIncidence",
+          "observedAt": "2025-11-23T06:55:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 13.5,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 5
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:001-AutoStationUpdate-5",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:001",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 7,
+          "observedAt": "2025-11-23T07:10:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "working",
+          "observedAt": "2025-11-23T07:10:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 6.9,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 3
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-001-auto-1",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:001-auto-1",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:001"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:001-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T23:00:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T23:45:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-23T23:00:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-23T23:45:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricCar"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "001-01"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251123-00101"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "card"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 3.5,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 21000,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 2100,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-001-auto-2",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:001-auto-2",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:001"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:001-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T10:05:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T11:35:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-23T10:05:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-23T11:35:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricMotorcycle"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "001-02"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251123-00102"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "mobile"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 3.0,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 18000,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 1800,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-001-auto-3",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:001-auto-3",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:001"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:001-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T20:10:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T20:52:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-23T20:10:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-23T20:52:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricBus"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "001-03"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251123-00103"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "mobile"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 14.5,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 87000,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 8700,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:002-AutoStationUpdate-1",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:002",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 3,
+          "observedAt": "2025-11-23T06:20:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "withIncidence",
+          "observedAt": "2025-11-23T06:20:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 76.9,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 3
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:002-AutoStationUpdate-2",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:002",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 5,
+          "observedAt": "2025-11-23T06:35:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostEmpty",
+          "observedAt": "2025-11-23T06:35:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 35.1,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:002-AutoStationUpdate-3",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:002",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 1,
+          "observedAt": "2025-11-23T06:50:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostEmpty",
+          "observedAt": "2025-11-23T06:50:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 53.8,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:002-AutoStationUpdate-4",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:002",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 2,
+          "observedAt": "2025-11-23T07:05:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostEmpty",
+          "observedAt": "2025-11-23T07:05:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 42.4,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:002-AutoStationUpdate-5",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:002",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 4,
+          "observedAt": "2025-11-23T07:20:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "working",
+          "observedAt": "2025-11-23T07:20:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 28.6,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:003-AutoStationUpdate-1",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:003",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 14,
+          "observedAt": "2025-11-23T06:30:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostFull",
+          "observedAt": "2025-11-23T06:30:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 54.0,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 3
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:003-AutoStationUpdate-2",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:003",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 16,
+          "observedAt": "2025-11-23T06:45:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "withIncidence",
+          "observedAt": "2025-11-23T06:45:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 50.7,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:003-AutoStationUpdate-3",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:003",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 17,
+          "observedAt": "2025-11-23T07:00:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostFull",
+          "observedAt": "2025-11-23T07:00:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 23.3,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 5
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:003-AutoStationUpdate-4",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:003",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 14,
+          "observedAt": "2025-11-23T07:15:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostFull",
+          "observedAt": "2025-11-23T07:15:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 50.4,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 2
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:003-AutoStationUpdate-5",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:003",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 13,
+          "observedAt": "2025-11-23T07:30:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostFull",
+          "observedAt": "2025-11-23T07:30:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 36.9,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 4
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-003-auto-1",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:003-auto-1",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:003"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:003-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T16:00:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T17:06:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-23T16:00:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-23T17:06:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricCar"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "003-01"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251123-00301"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "invoice"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 4.9,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 29400,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 2940,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-003-auto-2",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:003-auto-2",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:003"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:003-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T20:05:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T20:48:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-23T20:05:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-23T20:48:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricCar"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "003-02"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251123-00302"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "invoice"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 24.2,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 145200,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 14520,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-003-auto-3",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:003-auto-3",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:003"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:003-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-24T00:10:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-24T00:59:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-24T00:10:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-24T00:59:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricCar"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "003-03"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251123-00303"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "invoice"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 30.2,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 181200,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 18120,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:004-AutoStationUpdate-1",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:004",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 10,
+          "observedAt": "2025-11-23T06:40:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostEmpty",
+          "observedAt": "2025-11-23T06:40:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 39.9,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 1
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:004-AutoStationUpdate-2",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:004",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 6,
+          "observedAt": "2025-11-23T06:55:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "withIncidence",
+          "observedAt": "2025-11-23T06:55:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 64.6,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 2
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:004-AutoStationUpdate-3",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:004",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 8,
+          "observedAt": "2025-11-23T07:10:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostFull",
+          "observedAt": "2025-11-23T07:10:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 23.8,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:004-AutoStationUpdate-4",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:004",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 8,
+          "observedAt": "2025-11-23T07:25:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostFull",
+          "observedAt": "2025-11-23T07:25:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 68.6,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 4
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:004-AutoStationUpdate-5",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:004",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 9,
+          "observedAt": "2025-11-23T07:40:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "working",
+          "observedAt": "2025-11-23T07:40:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 67.3,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 4
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-004-auto-1",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:004-auto-1",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:004"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:004-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T09:00:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T09:43:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-23T09:00:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-23T09:43:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricMotorcycle"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "004-01"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251123-00401"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "card"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 7.6,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 45600,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 4560,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-004-auto-2",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:004-auto-2",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:004"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:004-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T06:05:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T06:40:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-23T06:05:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-23T06:40:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricBus"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "004-02"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251123-00402"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "mobile"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 53.7,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 322200,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 32220,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-004-auto-3",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:004-auto-3",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:004"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:004-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T13:10:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T14:03:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-23T13:10:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-23T14:03:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricBus"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "004-03"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251123-00403"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "invoice"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 9.0,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 54000,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 5400,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:005-AutoStationUpdate-1",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:005",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 5,
+          "observedAt": "2025-11-23T06:50:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostEmpty",
+          "observedAt": "2025-11-23T06:50:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 53.4,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 5
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:005-AutoStationUpdate-2",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:005",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 6,
+          "observedAt": "2025-11-23T07:05:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "withIncidence",
+          "observedAt": "2025-11-23T07:05:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 38.2,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 1
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:005-AutoStationUpdate-3",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:005",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 7,
+          "observedAt": "2025-11-23T07:20:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "withIncidence",
+          "observedAt": "2025-11-23T07:20:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 56.0,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 4
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:005-AutoStationUpdate-4",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:005",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 6,
+          "observedAt": "2025-11-23T07:35:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "withIncidence",
+          "observedAt": "2025-11-23T07:35:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 76.0,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 5
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:005-AutoStationUpdate-5",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:005",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 5,
+          "observedAt": "2025-11-23T07:50:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostEmpty",
+          "observedAt": "2025-11-23T07:50:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 76.2,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:006-AutoStationUpdate-1",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:006",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 0,
+          "observedAt": "2025-11-23T07:00:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostEmpty",
+          "observedAt": "2025-11-23T07:00:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 75.9,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 3
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:006-AutoStationUpdate-2",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:006",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 0,
+          "observedAt": "2025-11-23T07:15:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "working",
+          "observedAt": "2025-11-23T07:15:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 37.2,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 1
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:006-AutoStationUpdate-3",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:006",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 5,
+          "observedAt": "2025-11-23T07:30:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostEmpty",
+          "observedAt": "2025-11-23T07:30:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 75.8,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 2
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:006-AutoStationUpdate-4",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:006",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 0,
+          "observedAt": "2025-11-23T07:45:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "withIncidence",
+          "observedAt": "2025-11-23T07:45:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 42.8,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 4
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:006-AutoStationUpdate-5",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:006",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 0,
+          "observedAt": "2025-11-23T08:00:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostEmpty",
+          "observedAt": "2025-11-23T08:00:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 80.7,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 1
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:007-AutoStationUpdate-1",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:007",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 7,
+          "observedAt": "2025-11-23T07:10:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "working",
+          "observedAt": "2025-11-23T07:10:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 60.8,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 2
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:007-AutoStationUpdate-2",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:007",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 8,
+          "observedAt": "2025-11-23T07:25:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostEmpty",
+          "observedAt": "2025-11-23T07:25:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 69.4,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 3
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:007-AutoStationUpdate-3",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:007",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 11,
+          "observedAt": "2025-11-23T07:40:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostFull",
+          "observedAt": "2025-11-23T07:40:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 44.2,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:007-AutoStationUpdate-4",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:007",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 11,
+          "observedAt": "2025-11-23T07:55:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "withIncidence",
+          "observedAt": "2025-11-23T07:55:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 64.7,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 4
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:007-AutoStationUpdate-5",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:007",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 10,
+          "observedAt": "2025-11-23T08:10:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "working",
+          "observedAt": "2025-11-23T08:10:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 48.7,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-007-auto-1",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:007-auto-1",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:007"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:007-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T19:00:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T19:55:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-23T19:00:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-23T19:55:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricCar"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "007-01"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251123-00701"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "mobile"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 11.0,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 66000,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 6600,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-007-auto-2",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:007-auto-2",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:007"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:007-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T13:05:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T13:32:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-23T13:05:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-23T13:32:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricMotorcycle"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "007-02"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251123-00702"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "mobile"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 32.2,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 193200,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 19320,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-007-auto-3",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:007-auto-3",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:007"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:007-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T12:10:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T12:56:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-23T12:10:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-23T12:56:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricCar"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "007-03"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251123-00703"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "mobile"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 21.4,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 128399,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 12839,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:008-AutoStationUpdate-1",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:008",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 15,
+          "observedAt": "2025-11-23T07:20:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostEmpty",
+          "observedAt": "2025-11-23T07:20:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 49.4,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:008-AutoStationUpdate-2",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:008",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 10,
+          "observedAt": "2025-11-23T07:35:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostEmpty",
+          "observedAt": "2025-11-23T07:35:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 24.8,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:008-AutoStationUpdate-3",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:008",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 11,
+          "observedAt": "2025-11-23T07:50:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "working",
+          "observedAt": "2025-11-23T07:50:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 80.0,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:008-AutoStationUpdate-4",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:008",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 10,
+          "observedAt": "2025-11-23T08:05:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "withIncidence",
+          "observedAt": "2025-11-23T08:05:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 57.6,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:008-AutoStationUpdate-5",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:008",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 15,
+          "observedAt": "2025-11-23T08:20:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "working",
+          "observedAt": "2025-11-23T08:20:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 83.1,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-008-auto-1",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:008-auto-1",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:008"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:008-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T23:00:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T23:26:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-23T23:00:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-23T23:26:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricCar"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "008-01"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251123-00801"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "mobile"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 13.3,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 79800,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 7980,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-008-auto-2",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:008-auto-2",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:008"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:008-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T12:05:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T13:11:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-23T12:05:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-23T13:11:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricCar"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "008-02"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251123-00802"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "mobile"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 8.7,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 52199,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 5219,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-008-auto-3",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:008-auto-3",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:008"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:008-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T13:10:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T13:51:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-23T13:10:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-23T13:51:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricMotorcycle"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "008-03"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251123-00803"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "card"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 28.0,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 168000,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 16800,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:009-AutoStationUpdate-1",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:009",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 3,
+          "observedAt": "2025-11-23T07:30:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostFull",
+          "observedAt": "2025-11-23T07:30:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 51.9,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 5
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:009-AutoStationUpdate-2",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:009",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 5,
+          "observedAt": "2025-11-23T07:45:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostFull",
+          "observedAt": "2025-11-23T07:45:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 48.3,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:009-AutoStationUpdate-3",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:009",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 6,
+          "observedAt": "2025-11-23T08:00:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostEmpty",
+          "observedAt": "2025-11-23T08:00:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 7.5,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 5
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:009-AutoStationUpdate-4",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:009",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 3,
+          "observedAt": "2025-11-23T08:15:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "withIncidence",
+          "observedAt": "2025-11-23T08:15:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 58.7,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 3
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:009-AutoStationUpdate-5",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:009",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 4,
+          "observedAt": "2025-11-23T08:30:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostFull",
+          "observedAt": "2025-11-23T08:30:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 29.8,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 2
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-009-auto-1",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:009-auto-1",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:009"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:009-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T09:00:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T10:04:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-23T09:00:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-23T10:04:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricCar"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "009-01"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251123-00901"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "card"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 25.3,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 151800,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 15180,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-009-auto-2",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:009-auto-2",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:009"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:009-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-24T00:05:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-24T00:27:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-24T00:05:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-24T00:27:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricBus"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "009-02"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251123-00902"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "invoice"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 29.2,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 175200,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 17520,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-009-auto-3",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:009-auto-3",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:009"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:009-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T15:10:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T16:10:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-23T15:10:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-23T16:10:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricCar"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "009-03"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251123-00903"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "card"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 34.7,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 208200,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 20820,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:010-AutoStationUpdate-1",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:010",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 5,
+          "observedAt": "2025-11-23T07:40:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostFull",
+          "observedAt": "2025-11-23T07:40:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 55.5,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 1
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:010-AutoStationUpdate-2",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:010",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 4,
+          "observedAt": "2025-11-23T07:55:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostEmpty",
+          "observedAt": "2025-11-23T07:55:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 61.3,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 4
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:010-AutoStationUpdate-3",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:010",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 4,
+          "observedAt": "2025-11-23T08:10:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "working",
+          "observedAt": "2025-11-23T08:10:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 27.7,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:010-AutoStationUpdate-4",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:010",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 3,
+          "observedAt": "2025-11-23T08:25:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostEmpty",
+          "observedAt": "2025-11-23T08:25:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 67.4,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 0
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:010-AutoStationUpdate-5",
+      "operation": "update",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingStation:010",
+        "type": "EVChargingStation",
+        "availableCapacity": {
+          "type": "Property",
+          "value": 6,
+          "observedAt": "2025-11-23T08:40:00Z"
+        },
+        "status": {
+          "type": "Property",
+          "value": "almostFull",
+          "observedAt": "2025-11-23T08:40:00Z"
+        },
+        "instantaneousPower": {
+          "type": "Property",
+          "value": 25.2,
+          "unitCode": "KWT"
+        },
+        "queueLength": {
+          "type": "Property",
+          "value": 2
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-010-auto-1",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:010-auto-1",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:010"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:010-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T18:00:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T19:22:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-23T18:00:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-23T19:22:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricCar"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "010-01"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251123-01001"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "card"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 4.7,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 28200,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 2820,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-010-auto-2",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:010-auto-2",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:010"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:010-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T11:05:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T11:49:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-23T11:05:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-23T11:49:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricBus"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "010-02"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251123-01002"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "mobile"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 38.5,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 231000,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 23100,
+          "unitCode": "VND"
+        }
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Event:Session-New-010-auto-3",
+      "operation": "upsert",
+      "entity": {
+        "id": "urn:ngsi-ld:EVChargingSession:010-auto-3",
+        "type": "EVChargingSession",
+        "refFeatureOfInterest": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:EVChargingStation:010"
+        },
+        "refSensor": {
+          "type": "Relationship",
+          "object": "urn:ngsi-ld:Sensor:010-Main"
+        },
+        "observedProperty": {
+          "type": "Relationship",
+          "object": "https://example.org/def/EVChargingSession"
+        },
+        "startDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T07:10:00Z"
+        },
+        "endDateTime": {
+          "type": "Property",
+          "value": "2025-11-23T07:46:00Z"
+        },
+        "phenomenonTime": {
+          "type": "Property",
+          "value": "2025-11-23T07:10:00Z"
+        },
+        "resultTime": {
+          "type": "Property",
+          "value": "2025-11-23T07:46:00Z"
+        },
+        "vehicleType": {
+          "type": "Property",
+          "value": "electricBus"
+        },
+        "chargingUnitId": {
+          "type": "Property",
+          "value": "010-03"
+        },
+        "transactionId": {
+          "type": "Property",
+          "value": "TX-20251123-01003"
+        },
+        "transactionType": {
+          "type": "Property",
+          "value": "mobile"
+        },
+        "powerConsumption": {
+          "type": "Property",
+          "value": 16.3,
+          "unitCode": "KWH"
+        },
+        "amountCollected": {
+          "type": "Property",
+          "value": 97800,
+          "unitCode": "VND"
+        },
+        "taxAmountCollected": {
+          "type": "Property",
+          "value": 9780,
+          "unitCode": "VND"
+        }
+      }
     }
   ]
 }
