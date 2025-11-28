@@ -10,7 +10,8 @@ Mã nguồn hiện chứa thư mục `data/` với ba tệp chính:
 .
 ├─ data/
 │  ├─ stations.jsonld       # Dataset trạm sạc (EVChargingStation)
-│  ├─ observations.jsonld   # Dataset các phiên sạc (EVChargingSession, có SOSA)
+│  ├─ observations.jsonld   # Dataset phiên sạc & cảm biến (EVChargingSession/Sensor, có SOSA)
+│  ├─ sessions.jsonld       # Dataset lịch sử sạc gắn với công dân (Person + EVChargingSession)
 │  └─ realtime_sample.json  # Mẫu sự kiện NGSI-LD thời gian thực (update + session mới)
 └─ README.md
 ```
@@ -49,13 +50,20 @@ Các trường định lượng quan trọng đều có `unitCode` rõ ràng: `p
 
 Nhờ cấu trúc này, bộ dữ liệu phiên sạc rất phù hợp cho việc xây dựng dashboard phân tích: có thể vẽ biểu đồ năng lượng theo trạm và theo thời gian, thống kê doanh thu, so sánh hành vi giữa các loại phương tiện hoặc khu vực khác nhau trong thành phố, và đồng thời minh họa rõ ràng cách áp dụng SOSA/SSN trong bối cảnh NGSI-LD.
 
-## 6. Mẫu dữ liệu thời gian thực – `data/realtime_sample.json`
+## 6. Dữ liệu lịch sử sạc công dân – `data/sessions.jsonld`
+
+- Tệp JSON-LD chứa cả `Person` (schema.org) và các entity `EVChargingSession` gắn `refUser` tới từng công dân.
+- Các phiên sử dụng chung context NGSI-LD/SOSA/Smart Data Models với `observations.jsonld`, bổ sung các thuộc tính phục vụ thống kê: `sessionStatus`, `durationMinutes`, `powerConsumption`, `amountCollected`, `taxAmountCollected`.
+- Định danh `EVChargingSession` được chuẩn hóa dạng `citizen_user_x:station_id:timestamp` giúp backend ánh xạ nhanh tới tài khoản người dùng.
+- Dataset này phục vụ trực tiếp cho tính năng “Lịch sử sạc” và thống kê cá nhân trong frontend, đồng thời là nguồn nhập cho ETL (collection `citizens`, `sessions`).
+
+## 7. Mẫu dữ liệu thời gian thực – `data/realtime_sample.json`
 
 Tệp `realtime_sample.json` không phải là một Dataset NGSI-LD đầy đủ mà là tập các sự kiện mẫu, dùng để viết script mô phỏng dòng dữ liệu thời gian thực. Tệp vẫn khai báo `@context` tương tự các tệp khác (kể cả mapping sang SOSA/SSN) và chứa một mảng `events`. Mỗi phần tử trong mảng này có `id`, trường `operation` (ví dụ `update` hoặc `upsert`) và một đối tượng `entity` là payload NGSI-LD hoàn chỉnh.
 
 Một nhóm sự kiện dùng để cập nhật trạng thái trạm (thay đổi `availableCapacity`, `status`, `instantaneousPower`, `queueLength` vào các thời điểm khác nhau trong ngày). Thuộc tính `instantaneousPower` mang đơn vị kW thông qua `unitCode` `KWT`, còn các thời điểm đo được gắn bằng `observedAt` đúng khuyến nghị NGSI-LD. Nhóm sự kiện còn lại dùng để thêm mới các phiên sạc `EVChargingSession` với cùng mô hình SOSA như trong `observations.jsonld` (bao gồm `refFeatureOfInterest`, `refSensor`, `observedProperty`, `phenomenonTime`, `resultTime`) và kèm theo các trường `powerConsumption` (kWh), `amountCollected` (VND) và `taxAmountCollected` (VND) có đơn vị đo rõ ràng. Khi chạy lần lượt các sự kiện này, có thể mô phỏng được kịch bản giờ cao điểm, giờ thấp điểm, trạng thái có sự cố và các dòng giao dịch mới.
 
-## 7. Giấy phép và bối cảnh sử dụng
+## 8. Giấy phép và bối cảnh sử dụng
 
 Trừ khi được quy định khác trong phần mã nguồn của ứng dụng, dữ liệu trong thư mục `data/` được phát hành theo giấy phép Creative Commons Attribution 4.0 International (CC BY 4.0). Khi trích dẫn hoặc tái sử dụng, có thể ghi nguồn theo dạng: *"EV charging open data for Smart City X (OLP 2025), UE Core – Đại học Sư phạm TP.HCM"*.
 
@@ -65,7 +73,7 @@ Giấy phép cho phần mềm (API, dịch vụ backend, frontend web hoặc mob
 
 Mục tiêu của bộ dữ liệu là cung cấp một tập ví dụ hoàn chỉnh, có thể nạp trực tiếp vào NGSI-LD broker, dễ dàng tích hợp với các thành phần FIWARE và có thể dùng lại trong nhiều bối cảnh nghiên cứu hoặc trình diễn liên quan đến thành phố thông minh, hạ tầng sạc xe điện và quản lý dữ liệu IoT theo các tiêu chuẩn mở hiện đại.
 
-## 8. Hướng dẫn nạp dữ liệu vào NGSI-LD broker
+## 9. Hướng dẫn nạp dữ liệu vào NGSI-LD broker
 
 Các tệp `data/stations.jsonld` và `data/observations.jsonld` được tổ chức dưới dạng một đối tượng Dataset JSON-LD có trường `mainEntity` chứa mảng các entity NGSI-LD. Để nạp dữ liệu này vào NGSI-LD broker (Orion-LD, Scorpio,…), thực hiện theo các bước sau:
 
