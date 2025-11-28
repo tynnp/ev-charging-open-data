@@ -1,0 +1,453 @@
+{
+  "@context": [
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+    "https://smart-data-models.github.io/dataModel.Transportation/context.jsonld",
+    {
+      "sosa": "http://www.w3.org/ns/sosa/",
+      "schema": "https://schema.org/",
+      "EVChargingSession": "http://www.w3.org/ns/sosa/Observation",
+      "Sensor": "http://www.w3.org/ns/sosa/Sensor",
+      "Person": "https://schema.org/Person",
+      "refFeatureOfInterest": {
+        "@id": "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
+        "@type": "@id"
+      },
+      "refSensor": {
+        "@id": "http://www.w3.org/ns/sosa/madeBySensor",
+        "@type": "@id"
+      },
+      "observedProperty": {
+        "@id": "http://www.w3.org/ns/sosa/observedProperty",
+        "@type": "@id"
+      },
+      "refUser": {
+        "@id": "https://schema.org/customer",
+        "@type": "@id"
+      },
+      "phenomenonTime": "http://www.w3.org/ns/sosa/phenomenonTime",
+      "resultTime": "http://www.w3.org/ns/sosa/resultTime"
+    }
+  ],
+  "@type": "Dataset",
+  "name": "Lịch sử phiên sạc của người dân Thành phố X",
+  "description": "Dataset EVChargingSession mô tả các phiên sạc gắn với người dùng (citizen) để phục vụ chức năng lịch sử sạc và thống kê trong ứng dụng.",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": {
+    "@type": "Organization",
+    "name": "UE Core - Đại học Sư phạm Thành phố Hồ Chí Minh"
+  },
+  "mainEntity": [
+    {
+      "id": "urn:ngsi-ld:Person:citizen_user_1",
+      "type": "Person",
+      "name": {
+        "type": "Property",
+        "value": "Nguyễn Văn A"
+      },
+      "email": {
+        "type": "Property",
+        "value": "mailto:citizen1@example.org"
+      },
+      "phoneNumber": {
+        "type": "Property",
+        "value": "+84901234567"
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:Person:citizen_user_2",
+      "type": "Person",
+      "name": {
+        "type": "Property",
+        "value": "Trần Thị B"
+      },
+      "email": {
+        "type": "Property",
+        "value": "mailto:citizen2@example.org"
+      },
+      "phoneNumber": {
+        "type": "Property",
+        "value": "+84987654321"
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:EVChargingSession:citizen_user_1:001:20251120T011500Z",
+      "type": "EVChargingSession",
+      "refFeatureOfInterest": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:EVChargingStation:001"
+      },
+      "refSensor": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Sensor:001-Main"
+      },
+      "refUser": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Person:citizen_user_1"
+      },
+      "observedProperty": {
+        "type": "Relationship",
+        "object": "https://example.org/def/EVChargingSession"
+      },
+      "startDateTime": {
+        "type": "Property",
+        "value": "2025-11-20T01:15:00Z"
+      },
+      "endDateTime": {
+        "type": "Property",
+        "value": "2025-11-20T02:05:00Z"
+      },
+      "phenomenonTime": {
+        "type": "Property",
+        "value": "2025-11-20T01:15:00Z"
+      },
+      "resultTime": {
+        "type": "Property",
+        "value": "2025-11-20T02:05:00Z"
+      },
+      "vehicleType": {
+        "type": "Property",
+        "value": "electricCar"
+      },
+      "chargingUnitId": {
+        "type": "Property",
+        "value": "001-A"
+      },
+      "transactionId": {
+        "type": "Property",
+        "value": "TX-20251120-0001"
+      },
+      "transactionType": {
+        "type": "Property",
+        "value": "card"
+      },
+      "sessionStatus": {
+        "type": "Property",
+        "value": "finished"
+      },
+      "durationMinutes": {
+        "type": "Property",
+        "value": 50,
+        "unitCode": "MIN"
+      },
+      "powerConsumption": {
+        "type": "Property",
+        "value": 28.5,
+        "unitCode": "KWH"
+      },
+      "amountCollected": {
+        "type": "Property",
+        "value": 170000,
+        "unitCode": "VND"
+      },
+      "taxAmountCollected": {
+        "type": "Property",
+        "value": 17000,
+        "unitCode": "VND"
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:EVChargingSession:citizen_user_1:001:20251120T113000Z",
+      "type": "EVChargingSession",
+      "refFeatureOfInterest": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:EVChargingStation:001"
+      },
+      "refSensor": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Sensor:001-Main"
+      },
+      "refUser": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Person:citizen_user_1"
+      },
+      "observedProperty": {
+        "type": "Relationship",
+        "object": "https://example.org/def/EVChargingSession"
+      },
+      "startDateTime": {
+        "type": "Property",
+        "value": "2025-11-20T11:30:00Z"
+      },
+      "endDateTime": {
+        "type": "Property",
+        "value": "2025-11-20T12:10:00Z"
+      },
+      "phenomenonTime": {
+        "type": "Property",
+        "value": "2025-11-20T11:30:00Z"
+      },
+      "resultTime": {
+        "type": "Property",
+        "value": "2025-11-20T12:10:00Z"
+      },
+      "vehicleType": {
+        "type": "Property",
+        "value": "electricCar"
+      },
+      "chargingUnitId": {
+        "type": "Property",
+        "value": "001-B"
+      },
+      "transactionId": {
+        "type": "Property",
+        "value": "TX-20251120-0002"
+      },
+      "transactionType": {
+        "type": "Property",
+        "value": "mobile"
+      },
+      "sessionStatus": {
+        "type": "Property",
+        "value": "finished"
+      },
+      "durationMinutes": {
+        "type": "Property",
+        "value": 40,
+        "unitCode": "MIN"
+      },
+      "powerConsumption": {
+        "type": "Property",
+        "value": 15.2,
+        "unitCode": "KWH"
+      },
+      "amountCollected": {
+        "type": "Property",
+        "value": 95000,
+        "unitCode": "VND"
+      },
+      "taxAmountCollected": {
+        "type": "Property",
+        "value": 9500,
+        "unitCode": "VND"
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:EVChargingSession:citizen_user_1:003:20251122T071000Z",
+      "type": "EVChargingSession",
+      "refFeatureOfInterest": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:EVChargingStation:003"
+      },
+      "refSensor": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Sensor:003-Main"
+      },
+      "refUser": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Person:citizen_user_1"
+      },
+      "observedProperty": {
+        "type": "Relationship",
+        "object": "https://example.org/def/EVChargingSession"
+      },
+      "startDateTime": {
+        "type": "Property",
+        "value": "2025-11-22T07:10:00Z"
+      },
+      "endDateTime": {
+        "type": "Property",
+        "value": "2025-11-22T08:00:00Z"
+      },
+      "phenomenonTime": {
+        "type": "Property",
+        "value": "2025-11-22T07:10:00Z"
+      },
+      "resultTime": {
+        "type": "Property",
+        "value": "2025-11-22T08:00:00Z"
+      },
+      "vehicleType": {
+        "type": "Property",
+        "value": "electricCar"
+      },
+      "chargingUnitId": {
+        "type": "Property",
+        "value": "003-C"
+      },
+      "transactionId": {
+        "type": "Property",
+        "value": "TX-20251122-0005"
+      },
+      "transactionType": {
+        "type": "Property",
+        "value": "mobile"
+      },
+      "sessionStatus": {
+        "type": "Property",
+        "value": "finished"
+      },
+      "durationMinutes": {
+        "type": "Property",
+        "value": 50,
+        "unitCode": "MIN"
+      },
+      "powerConsumption": {
+        "type": "Property",
+        "value": 24.1,
+        "unitCode": "KWH"
+      },
+      "amountCollected": {
+        "type": "Property",
+        "value": 145000,
+        "unitCode": "VND"
+      },
+      "taxAmountCollected": {
+        "type": "Property",
+        "value": 14500,
+        "unitCode": "VND"
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:EVChargingSession:citizen_user_2:007:20251121T093000Z",
+      "type": "EVChargingSession",
+      "refFeatureOfInterest": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:EVChargingStation:007"
+      },
+      "refSensor": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Sensor:007-Main"
+      },
+      "refUser": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Person:citizen_user_2"
+      },
+      "observedProperty": {
+        "type": "Relationship",
+        "object": "https://example.org/def/EVChargingSession"
+      },
+      "startDateTime": {
+        "type": "Property",
+        "value": "2025-11-21T09:30:00Z"
+      },
+      "endDateTime": {
+        "type": "Property",
+        "value": "2025-11-21T10:05:00Z"
+      },
+      "phenomenonTime": {
+        "type": "Property",
+        "value": "2025-11-21T09:30:00Z"
+      },
+      "resultTime": {
+        "type": "Property",
+        "value": "2025-11-21T10:05:00Z"
+      },
+      "vehicleType": {
+        "type": "Property",
+        "value": "electricMotorcycle"
+      },
+      "chargingUnitId": {
+        "type": "Property",
+        "value": "007-A"
+      },
+      "transactionId": {
+        "type": "Property",
+        "value": "TX-20251121-0302"
+      },
+      "transactionType": {
+        "type": "Property",
+        "value": "qr"
+      },
+      "sessionStatus": {
+        "type": "Property",
+        "value": "finished"
+      },
+      "durationMinutes": {
+        "type": "Property",
+        "value": 35,
+        "unitCode": "MIN"
+      },
+      "powerConsumption": {
+        "type": "Property",
+        "value": 12.4,
+        "unitCode": "KWH"
+      },
+      "amountCollected": {
+        "type": "Property",
+        "value": 78000,
+        "unitCode": "VND"
+      },
+      "taxAmountCollected": {
+        "type": "Property",
+        "value": 7800,
+        "unitCode": "VND"
+      }
+    },
+    {
+      "id": "urn:ngsi-ld:EVChargingSession:citizen_user_2:008:20251124T182000Z",
+      "type": "EVChargingSession",
+      "refFeatureOfInterest": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:EVChargingStation:008"
+      },
+      "refSensor": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Sensor:008-Main"
+      },
+      "refUser": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:Person:citizen_user_2"
+      },
+      "observedProperty": {
+        "type": "Relationship",
+        "object": "https://example.org/def/EVChargingSession"
+      },
+      "startDateTime": {
+        "type": "Property",
+        "value": "2025-11-24T18:20:00Z"
+      },
+      "endDateTime": {
+        "type": "Property",
+        "value": "2025-11-24T19:10:00Z"
+      },
+      "phenomenonTime": {
+        "type": "Property",
+        "value": "2025-11-24T18:20:00Z"
+      },
+      "resultTime": {
+        "type": "Property",
+        "value": "2025-11-24T19:10:00Z"
+      },
+      "vehicleType": {
+        "type": "Property",
+        "value": "electricCar"
+      },
+      "chargingUnitId": {
+        "type": "Property",
+        "value": "008-B"
+      },
+      "transactionId": {
+        "type": "Property",
+        "value": "TX-20251124-0401"
+      },
+      "transactionType": {
+        "type": "Property",
+        "value": "card"
+      },
+      "sessionStatus": {
+        "type": "Property",
+        "value": "finished"
+      },
+      "durationMinutes": {
+        "type": "Property",
+        "value": 50,
+        "unitCode": "MIN"
+      },
+      "powerConsumption": {
+        "type": "Property",
+        "value": 26.8,
+        "unitCode": "KWH"
+      },
+      "amountCollected": {
+        "type": "Property",
+        "value": 161000,
+        "unitCode": "VND"
+      },
+      "taxAmountCollected": {
+        "type": "Property",
+        "value": 16100,
+        "unitCode": "VND"
+      }
+    }
+  ]
+}
