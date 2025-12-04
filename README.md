@@ -67,11 +67,11 @@ Một nhóm sự kiện dùng để cập nhật trạng thái trạm (thay đ�
 
 ## 8. Giấy phép và bối cảnh sử dụng
 
-Trừ khi được quy định khác trong phần mã nguồn của ứng dụng, dữ liệu trong thư mục `data/` được phát hành theo giấy phép Creative Commons Attribution 4.0 International (CC BY 4.0). Khi trích dẫn hoặc tái sử dụng, có thể ghi nguồn theo dạng: *"EV charging open data for Smart City X (OLP 2025), UE Core – Đại học Sư phạm TP.HCM"*.
+Trừ khi được quy định khác trong phần mã nguồn của ứng dụng, dữ liệu trong thư mục `data/` được phát hành theo giấy phép [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). Khi trích dẫn hoặc tái sử dụng, có thể ghi nguồn theo dạng: *"EV charging open data for Smart City X (OLP 2025), UE Core – Đại học Sư phạm TP.HCM"*.
 
-Dữ liệu sử dụng vocabulary schema.org (https://schema.org), được cấp phép theo Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0).
+Dữ liệu sử dụng vocabulary [schema.org](https://schema.org/), được cấp phép theo [Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0)](https://creativecommons.org/licenses/by-sa/3.0/).
 
-Giấy phép cho phần mềm (API, dịch vụ backend, frontend web hoặc mobile) nên là một giấy phép nguồn mở được OSI phê duyệt như MIT, Apache-2.0 hoặc GPL, và sẽ được mô tả riêng trong kho mã nguồn của ứng dụng.
+Giấy phép cho phần mềm (API, dịch vụ backend, frontend web hoặc mobile) nên là một giấy phép nguồn mở được OSI phê duyệt như [MIT](https://opensource.org/licenses/MIT), [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0) hoặc [GPL](https://www.gnu.org/licenses/gpl-3.0.html), và sẽ được mô tả riêng trong kho mã nguồn của ứng dụng.
 
 Mục tiêu của bộ dữ liệu là cung cấp một tập ví dụ hoàn chỉnh, có thể nạp trực tiếp vào NGSI-LD broker, dễ dàng tích hợp với các thành phần FIWARE và có thể dùng lại trong nhiều bối cảnh nghiên cứu hoặc trình diễn liên quan đến thành phố thông minh, hạ tầng sạc xe điện và quản lý dữ liệu IoT theo các tiêu chuẩn mở hiện đại.
 
