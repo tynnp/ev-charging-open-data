@@ -13,10 +13,12 @@ Mã nguồn hiện chứa thư mục `data/` với ba tệp chính:
 │  ├─ observations.jsonld   # Dataset phiên sạc & cảm biến (EVChargingSession/Sensor, có SOSA)
 │  ├─ sessions.jsonld       # Dataset lịch sử sạc gắn với công dân (Person + EVChargingSession)
 │  └─ realtime_sample.json  # Mẫu sự kiện NGSI-LD thời gian thực (update + session mới)
+├─ LICENSE                  # Giấy phép dữ liệu mở
+├─ CHANGELOG.md             # Lịch sử thay đổi phiên bản
 └─ README.md
 ```
 
-Trong đó `stations.jsonld` và `observations.jsonld` là hai dataset NGSI-LD hoàn chỉnh, còn `realtime_sample.json` dùng để mô phỏng dòng sự kiện khi demo.
+Trong đó `stations.jsonld`, `observations.jsonld` và `sessions.jsonld` là các dataset NGSI-LD hoàn chỉnh, còn `realtime_sample.json` dùng để mô phỏng dòng sự kiện khi demo.
 
 ## 2. NGSI-LD và Smart Data Models
 
