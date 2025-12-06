@@ -4,7 +4,7 @@ Bộ dữ liệu này mô tả các trạm sạc xe điện và các lần sạc
 
 ## 1. Cấu trúc dự án
 
-Mã nguồn hiện chứa thư mục `data/` với ba tệp chính:
+Mã nguồn hiện chứa thư mục `data/` với bốn tệp chính:
 
 ```text
 .
